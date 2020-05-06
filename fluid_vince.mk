@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common FluidOS stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := aosip_vince
+PRODUCT_NAME := fluid_vince
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
@@ -42,3 +42,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
 
 TARGET_VENDOR := xiaomi
+
+# official tag
+FLUID_BUILD_TYPE := OFFICIAL

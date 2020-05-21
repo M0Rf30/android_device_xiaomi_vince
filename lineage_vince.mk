@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common Aosp stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+#$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some common Halium stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/halium.mk)
